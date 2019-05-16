@@ -1,7 +1,11 @@
 <template>
     <div>
-        <header>{{user.userName}}{{pass}}</header>
-        <body></body>
+        <header></header>
+        <body>
+            <el-input v-model="userNaem" placeholder="userName"></el-input>
+            <el-input v-model="password" placeholder="Password"></el-input>
+            <el-button></el-button>
+        </body>
         
     </div>
 </template>
@@ -11,11 +15,9 @@ export default {
 
     data () {
         return {
-            user:{
-                userName: 'lcl',
-
-            },
-            pass: "123456",
+            userName: '',
+            password: '',
+           
         }
     },
     methods:{
